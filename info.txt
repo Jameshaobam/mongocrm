@@ -1,0 +1,14 @@
+ ->raise NotImplementedError(
+NotImplementedError: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+
+      The above error is solved by pip install pymongo==3.12.3
+
+->This error is   raise ImproperlyConfigured(
+ django.core.exceptions.ImproperlyConfigured: 'djongo' isn't an available database backend or couldn't be imported. Check the above exception. To use one of the built-in backends, use 'django.db.backends.XXX', where XXX is one of:
+    'mysql', 'oracle', 'postgresql', 'sqlite3'
+
+        solved by installing pip install pytz
+
+->MongoDB compass : connect ECONNREFUSED 127.0.0.1:27017
+
+         Type services in start. open it. search for mongodb there. start/restart the mongodb from services.
