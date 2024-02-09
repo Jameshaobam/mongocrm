@@ -33,6 +33,9 @@ def articles(req):
 @api_view(['POST'])
 def create_article(request):
     if request.method == 'POST':
+        
+        
+        
         serializer = ArticleSerializer(data=request.data)
 
         if serializer.is_valid():
@@ -40,6 +43,8 @@ def create_article(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+
 
     return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
         
