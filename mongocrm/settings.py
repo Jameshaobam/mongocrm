@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'djongo',
-    'home',
-    'rest_framework'
+    'home.apps.HomeConfig',
+    'rest_framework',
+    'contact.apps.ContactConfig'
 ]
 
 MIDDLEWARE = [
@@ -128,4 +129,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-DATABASE_ROUTERS = ['db_routers.routers.AuthRouter',]
+DATABASE_ROUTERS = ['db_routers.routers.MyDBRouter',]
